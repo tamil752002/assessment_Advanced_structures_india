@@ -1,0 +1,116 @@
+.detail-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    color: var(--muted);
+    cursor: pointer;
+    margin-bottom: 28px;
+    background: none;
+    border: none;
+    font-family: 'DM Sans', sans-serif;
+    transition: color 0.15s;
+    padding: 0;
+}
+
+.detail-wrap {
+    max-width: 835px;
+    margin: 0 auto;
+    padding: 32px 20px 60px;
+}
+
+.detail-img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    display: block;
+    background: #f0efeb;
+}
+
+.detail-body {
+    padding: 28px 32px 32px;
+}
+
+.detail-cat-tag {
+    display: inline-block;
+    font-size: 12px;
+    background: var(--accent-light);
+    color: var(--accent);
+    padding: 4px 12px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.detail-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    line-height: 1.2;
+}
+
+.detail-props-heading {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    margin-bottom: 14px;
+    font-weight: 500;
+}
+
+.detail-props-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 12px;
+}
+
+.prop-box {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px 14px;
+}
+
+.prop-label {
+    font-size: 11px;
+    color: var(--muted);
+    margin-bottom: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.prop-value {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text);
+}
+
+@media (max-width: 600px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .detail-img {
+        height: 220px;
+    }
+
+    .detail-body {
+        padding: 20px;
+    }
+
+    .detail-title {
+        font-size: 20px;
+    }
+
+    .home-header h1 {
+        font-size: 22px;
+    }
+}
